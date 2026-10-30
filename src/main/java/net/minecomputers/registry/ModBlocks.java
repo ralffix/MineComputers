@@ -2,6 +2,7 @@ package net.minecomputers.registry;
 
 import net.minecomputers.MineComputers;
 import net.minecomputers.block.BrainBlock;
+import net.minecomputers.block.CableBlock;
 import net.minecomputers.block.LaptopBlock;
 import net.minecomputers.block.ScreenBlock;
 import net.minecomputers.block.ServoBlock;
@@ -21,10 +22,13 @@ public final class ModBlocks {
     // Where the code sits and runs. Needs no FE.
     public static final DeferredBlock<Block> BRAIN = BLOCKS.<Block>registerBlock("brain", BrainBlock::new, machine());
 
-    // Cables: data only, FE only, and FE + data on the same line.
-    public static final DeferredBlock<Block> DATA_CABLE = BLOCKS.registerSimpleBlock("data_cable", cable());
-    public static final DeferredBlock<Block> POWER_CABLE = BLOCKS.registerSimpleBlock("power_cable", cable());
-    public static final DeferredBlock<Block> POWER_DATA_CABLE = BLOCKS.registerSimpleBlock("power_data_cable", cable());
+    // Cables: data only, FE only, and FE + data on the same line. They share one class and the same models.
+    public static final DeferredBlock<Block> DATA_CABLE = BLOCKS.<Block>registerBlock("data_cable",
+            props -> new CableBlock(CableBlock.Kind.DATA, props), cable());
+    public static final DeferredBlock<Block> POWER_CABLE = BLOCKS.<Block>registerBlock("power_cable",
+            props -> new CableBlock(CableBlock.Kind.POWER, props), cable());
+    public static final DeferredBlock<Block> POWER_DATA_CABLE = BLOCKS.<Block>registerBlock("power_data_cable",
+            props -> new CableBlock(CableBlock.Kind.POWER_DATA, props), cable());
 
     // The laptop is placed in the world (on a cable or a brain), so it is a block with an item.
     public static final DeferredBlock<Block> LAPTOP = BLOCKS.<Block>registerBlock("laptop", LaptopBlock::new,
