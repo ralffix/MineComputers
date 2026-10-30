@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "minecomputers"
+version = "0.1.0"
+displayName = "MineComputers"
+authors = "Ralfs"
+description = '''Programmable computers for Minecraft. You write JavaScript on a laptop and the code runs on a brain that controls screens, speakers, servos and redstone.'''
+
+[[dependencies.minecomputers]]
+    modId = "neoforge"
+    type = "required"
+    versionRange = "[21.1.0,)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.minecomputers]]
+    modId = "create"
+    type = "required"
+    versionRange = "[6.0.10,6.1.0)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.minecomputers]]
+    modId = "minecraft"
+    type = "required"
+    versionRange = "[1.21.1]"
+    ordering = "NONE"
+    side = "BOTH"

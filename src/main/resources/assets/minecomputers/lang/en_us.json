@@ -1,0 +1,19 @@
+{
+  "itemGroup.minecomputers": "MineComputers",
+
+  "block.minecomputers.laptop": "Laptop",
+  "block.minecomputers.brain": "Brain",
+  "block.minecomputers.data_cable": "Data Cable",
+  "block.minecomputers.power_cable": "Power Cable",
+  "block.minecomputers.power_data_cable": "Power Data Cable",
+  "block.minecomputers.power_source": "Power Source",
+  "block.minecomputers.servo": "Servo",
+  "block.minecomputers.screen": "Screen",
+  "block.minecomputers.speaker": "Speaker",
+  "block.minecomputers.redstone_link": "Redstone Link",
+  "block.minecomputers.remote_gateway": "Remote Gateway",
+
+  "item.minecomputers.remote_access": "Remote Access Upgrade",
+  "item.minecomputers.link_transmitter": "Link Transmitter",
+  "item.minecomputers.cipher": "Cipher"
+}

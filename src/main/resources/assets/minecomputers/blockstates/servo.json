@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "minecomputers:block/servo" },
+    "facing=east": { "model": "minecomputers:block/servo", "y": 90 },
+    "facing=south": { "model": "minecomputers:block/servo", "y": 180 },
+    "facing=west": { "model": "minecomputers:block/servo", "y": 270 },
+    "facing=up": { "model": "minecomputers:block/servo", "x": 270 },
+    "facing=down": { "model": "minecomputers:block/servo", "x": 90 }
+  }
+}

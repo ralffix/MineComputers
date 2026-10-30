@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "minecomputers:block/power_source" }
+  }
+}

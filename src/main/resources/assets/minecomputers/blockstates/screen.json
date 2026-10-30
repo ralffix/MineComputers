@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=south": { "model": "minecomputers:block/screen" },
+    "facing=west": { "model": "minecomputers:block/screen", "y": 90 },
+    "facing=north": { "model": "minecomputers:block/screen", "y": 180 },
+    "facing=east": { "model": "minecomputers:block/screen", "y": 270 }
+  }
+}
